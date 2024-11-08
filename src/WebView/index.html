@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Tester</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>API Tester</h1>
+        <form id="apiForm">
+            <label for="url">API Endpoint:</label>
+            <input type="text" id="url" required placeholder="https://api.example.com/endpoint">
+
+            <label for="method">HTTP Method:</label>
+            <select id="method">
+                <option value="GET">GET</option>
+                <option value="POST">POST</option>
+                <option value="PUT">PUT</option>
+                <option value="DELETE">DELETE</option>
+            </select>
+
+            <div id="headers-container">
+                <label>Headers:</label>
+                <button type="button" id="add-header">Add Header</button>
+            </div>
+
+            <label for="body">Request Body (JSON format):</label>
+            <textarea id="body" rows="4" placeholder='{"key": "value"}'></textarea>
+
+            <button type="submit">Send Request</button>
+        </form>
+
+        <div id="response"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
