@@ -2,10 +2,14 @@
   "name": "easyfetch-client",
   "displayName": "EasyFetch Client",
   "publisher": "Mhocine",
-  "description": "EasyFetch Client is a vs code extension that will help you test your apis directly from vs code ",
-  "version": "0.0.1",
+  "description": "EasyFetch Client is a vs code extension that will help you test your apis directly from vs code. you can activate it by ctrl+shift+p then type Easy fetch Client",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.95.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hocineMK03/EasyFetch-Client.git"
   },
   "categories": [
     "Other"
